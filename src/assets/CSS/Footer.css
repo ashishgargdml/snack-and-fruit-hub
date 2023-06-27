@@ -7,6 +7,7 @@
 .main-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 20px;
   color: #253d4e;
 }
@@ -46,6 +47,7 @@ hr {
 .sub-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 15px;
   color: #253d4e;
 }
@@ -54,6 +56,7 @@ hr {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sub-footer .contact h2 {
@@ -92,6 +95,7 @@ hr {
 #download {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #download img {
