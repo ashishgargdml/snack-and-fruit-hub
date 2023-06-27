@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  color: #253d4e;
+}
+
+hr {
+  border: 1px solid #bce3c9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer li {
+  padding: 12px 4px;
+  font-size: 15px;
+  width: 208px;
+}
+
+.main-footer h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.address,
+.company,
+.account,
+.corporate,
+.popular,
+.install-app {
+  padding: 0px 12px;
+  margin-right: 15px;
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #253d4e;
+}
+
+.sub-footer .contact ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sub-footer .contact h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #3bb77e;
+}
+
+.sub-footer .contact ul li {
+    width: 200px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.company ul li:hover,
+.account ul li:hover,
+.corporate ul li:hover,
+.popular ul li:hover {
+  color: #3bb77e;
+  transform: translate(4px, -2px);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.social img {
+  width: 26px;
+  margin-left: 4px;
+}
+
+.social p {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+#download {
+  display: flex;
+  justify-content: space-between;
+}
+
+#download img {
+  max-width: 128px;
+}
+
+#download img:hover {
+  transform: translate(0px, -5px);
+  transition-duration: 0.88s;
+}
