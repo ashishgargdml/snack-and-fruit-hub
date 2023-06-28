@@ -3,22 +3,6 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-nav {
-  position: fixed;
-  margin-top: 20px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-top:  1px solid #3bb77e;
-  border-bottom:  1px solid #3bb77e;
-  width: 1500px; */
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #484747;
-}
 
 .content {
 }
