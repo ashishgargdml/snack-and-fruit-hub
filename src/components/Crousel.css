@@ -1,0 +1,35 @@
+#newsletter {
+  display: flex;
+  color: red;
+}
+
+.custom {
+  font-family: "Quicksand";
+  text-align: left;
+  left: 100px;
+  margin-bottom: 130px;
+}
+
+.custom h1 {
+    font-size: 72px;
+  font-weight: 700;
+  color: #253d4e;
+}
+
+.custom p {
+    font-size: 30px;
+}
+
+.news-form {
+  display: flex;
+}
+
+.news-form input {
+  padding: 20px 20px;
+  width: 300px;
+}
+
+.news-form button {
+  width: 150px;
+  background-color: #3BB77E;
+}

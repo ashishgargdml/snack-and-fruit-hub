@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@400;600&display=swap");
 body {
   margin: 0;
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   max-width: 1600px;
-  margin: 0 auto;;
+  margin: 0 auto;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

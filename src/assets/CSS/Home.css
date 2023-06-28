@@ -5,28 +5,7 @@
 
 
 .content {
-}
-
-.browser-btn {
-  background: #3bb77e;
-  border: #3bb77e;
-  border-radius: 5px;
-  line-height: 44px;
-  padding: 0px 16px;
-  font-size: 16px;
-  color: white;
-  cursor: pointer;
-}
-
-.browser-btn img {
-  width: 30px;
-  height: auto;
-  margin-top: 6px;
-}
-
-.browser-btn{
-  display: flex;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .footer {
