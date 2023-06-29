@@ -11,6 +11,9 @@ import category7 from "../assets/img/category-7.svg";
 import category8 from "../assets/img/category-8.svg";
 import category9 from "../assets/img/category-9.svg";
 import category10 from "../assets/img/category-10.svg";
+import ru from "../assets/img/flags/flag-ru.png";
+import dt from "../assets/img/flags/flag-dt.png";
+import fr from "../assets/img/flags/flag-fr.png";
 
 export {
   plus,
@@ -26,4 +29,7 @@ export {
   category7,
   category8,
   category9,
+  ru,
+  fr,
+  dt,
 };

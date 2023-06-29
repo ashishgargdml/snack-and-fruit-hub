@@ -39,7 +39,7 @@ const Crousel = () => {
                   type="email"
                   placeholder="Your emaill address"
                 />
-                <button class="btn btn-success rounded-pill border-0" type="submit">
+                <button class="btn btn-success rounded-end-pill border-0" type="submit">
                   Subscribe
                 </button>
               </form>
@@ -61,7 +61,7 @@ const Crousel = () => {
                   type="email"
                   placeholder="Your emaill address"
                 />
-                <button class="btn btn-success rounded-pill border-0" type="submit" tabindex="-1">
+                <button class="btn btn-success rounded-end-pill border-0" type="submit" tabindex="-1">
                   Subscribe
                 </button>
               </form>
