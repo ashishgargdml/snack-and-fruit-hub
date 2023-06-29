@@ -14,7 +14,12 @@ import category10 from "../assets/img/category-10.svg";
 import ru from "../assets/img/flags/flag-ru.png";
 import dt from "../assets/img/flags/flag-dt.png";
 import fr from "../assets/img/flags/flag-fr.png";
-
+import logo from "../assets/img/logo.svg";
+import loc from "../assets/img/icons/location.png";
+import compareIcon from "../assets/img/icons/icon-compare.svg";
+import wishlistIcon from "../assets/img/icons/icon-heart.svg";
+import cartIcon from "../assets/img/icons/icon-cart.svg"; 
+import userIcon from "../assets/img/icons/icon-user.svg";
 export {
   plus,
   btnImg,
@@ -32,4 +37,10 @@ export {
   ru,
   fr,
   dt,
+  logo,
+  loc,
+  userIcon,
+  wishlistIcon,
+  cartIcon,
+  compareIcon,
 };

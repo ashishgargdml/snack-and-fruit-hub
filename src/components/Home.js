@@ -8,14 +8,17 @@ import MiddleBanner from "./MiddleBanner";
 const Home = () => {
   return (
     <>
-      <div id="grid">
+      <header>
         <Navbar />
-        <div className="item content"><Crousel />
-        <MiddleBanner /></div>
-        <div className="footer item">
+      </header>
+      <main>
+          <Crousel />
+          <MiddleBanner />
+      </main>
+      <footer>
+
           <Footer />
-        </div>
-      </div>
+      </footer>
     </>
   );
 };

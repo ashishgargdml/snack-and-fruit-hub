@@ -5,31 +5,32 @@ import "../assets/CSS/MiddleBanner.css";
 const MiddleBanner = () => {
   return (
     <>
-      <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
-        <div class="">
-          <div class="row">
-            <div class="col-lg-12 ">
-              <div class="position-relative newsletter-inner d-flex flex-wrap justify-content-around">
-                <div class="newsletter-content ">
-                  <h2 class="mb-20">
+      <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
+        <div className="">
+          <div className="row">
+            <div className="col-lg-12 ">
+              <div className="position-relative newsletter-inner d-flex flex-wrap justify-content-around">
+                <div className="newsletter-content ">
+                  <h2 className="mb-20">
                     Stay home & get your daily <br />
                     needs from our shop
                   </h2>
 
-                  <p class="mb-45">
+                  <p className="mb-45">
                     Start You'r Daily Shopping with{" "}
-                    <span class="text-brand">Nest Mart</span>
+                    <span className="text-brand">Nest Mart</span>
                   </p>
 
-                  <form class="form-subcriber d-flex ">
+                  <form className="form-subcriber d-flex ">
                     <input
                       className="border-0 rounded-start-pill"
                       type="email"
                       placeholder="Your emaill address"
+                      id=".."
                     />
 
                     <button
-                      class="btn btn-success rounded-end-pill border-0"
+                      className="btn btn-success rounded-end-pill border-0"
                       type="submit"
                     >
                       Subscribe

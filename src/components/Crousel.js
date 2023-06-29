@@ -6,13 +6,13 @@ import './Crousel.css'
 const Crousel = () => {
   return (
     <>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
+      <div id="carouselExampleIndicators" className="carousel slide">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -23,45 +23,47 @@ const Crousel = () => {
             aria-label="Slide 2"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={slider1} class="d-block w-100 rounded-5" alt="slider1" />
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={slider1} className="d-block w-100 rounded-5" alt="slider1" />
             <div className="carousel-caption text-black custom">
               <h1 className="display-2 ">
                 Don’t miss amazing
                 <br />
                 grocery deals
               </h1>
-              <p class="mb-65">Sign up for the daily newsletter</p>
+              <p className="mb-65">Sign up for the daily newsletter</p>
               <form className="news-form">
                 <input
                 className="border-0 rounded-start-pill"
                   type="email"
                   placeholder="Your emaill address"
+                  id=".."
                 />
-                <button class="btn btn-success rounded-end-pill border-0" type="submit">
+                <button className="btn btn-success rounded-end-pill border-0" type="submit">
                   Subscribe
                 </button>
               </form>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src={slider2} class="d-block w-100 rounded-5" alt="slider2" />
+          <div className="carousel-item">
+            <img src={slider2} className="d-block w-100 rounded-5" alt="slider2" />
             <div className="carousel-caption text-black custom">
-              <h1 class="display-2">
+              <h1 className="display-2">
                 {" "}
                 Fresh Vegetables
                 <br />
                 Big discount
               </h1>
-              <p class="mb-65">Save upto 50% off on your first order</p>
+              <p className="mb-65">Save upto 50% off on your first order</p>
               <form className="news-form">
                 <input
                 className="border-0 rounded-start-pill"
                   type="email"
                   placeholder="Your emaill address"
+                  id=".."
                 />
-                <button class="btn btn-success rounded-end-pill border-0" type="submit" tabindex="-1">
+                <button className="btn btn-success rounded-end-pill border-0" type="submit" tabIndex="-1">
                   Subscribe
                 </button>
               </form>
@@ -69,22 +71,22 @@ const Crousel = () => {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </>
