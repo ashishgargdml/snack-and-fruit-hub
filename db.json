@@ -1,57 +1,57 @@
 {
   "hotels": [
     {
-      "imageSrc": "require('../assets/img/catagory/cat-1.png')",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-1.png",
       "title": "Vegetables",
       "items": 72
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-2.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png",
       "title": "Strawberry",
       "items": 36
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-3.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png",
       "title": "Snack",
       "items": 56
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-4.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-4.png",
       "title": "Black plum",
       "items": 123
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-5.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png",
       "title": "Custard Apple",
       "items": 34
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-6.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png",
       "title": "Red Apple",
       "items": 54
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-7.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png",
       "title": "Peach",
       "items": 14
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-8.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-12.png",
       "title": "Organic Kiwi",
       "items": 28
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-9.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png",
       "title": "Cake & Milk",
       "items": 26
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-10.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-14.png",
       "title": "Coffe & Tea",
       "items": 89
     },
     {
-      "imageSrc": "../assets/img/catagory/cat-11.png",
+      "imageSrc": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-15.png",
       "title": "Headphone",
       "items": 87
     }

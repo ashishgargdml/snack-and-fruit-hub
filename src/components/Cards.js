@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { left, right } from "./images";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import '../assets/CSS/Cards.css';
+import "../assets/CSS/Cards.css";
 
 const Cards = () => {
   const [data, setData] = useState([]);
@@ -18,6 +18,32 @@ const Cards = () => {
     speed: 1000,
     autoplaySpeed: 5000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const loadData = async () => {
@@ -33,6 +59,31 @@ const Cards = () => {
       {data.length ? (
         <div className="content">
           <div className="controls custom-btn-ctrl">
+            <div class="title">
+              <h3>Featured Categories</h3>
+              <ul class="list-inline nav links">
+                <li class="list-inline-item nav-item">
+                  <a class="nav-link" href="shop-grid-right.html">
+                    Cake &amp; Milk
+                  </a>
+                </li>
+                <li class="list-inline-item nav-item">
+                  <a class="nav-link" href="shop-grid-right.html">
+                    Coffes &amp; Teas
+                  </a>
+                </li>
+                <li class="list-inline-item nav-item">
+                  <a class="nav-link active" href="shop-grid-right.html">
+                    Pet Foods
+                  </a>
+                </li>
+                <li class="list-inline-item nav-item">
+                  <a class="nav-link" href="shop-grid-right.html">
+                    Vegetables
+                  </a>
+                </li>
+              </ul>
+            </div>
             <button onClick={sliderRef?.slickPrev}>
               <img src={left} alt="left" />
             </button>
