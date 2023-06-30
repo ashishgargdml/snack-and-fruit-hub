@@ -20,6 +20,14 @@ import compareIcon from "../assets/img/icons/icon-compare.svg";
 import wishlistIcon from "../assets/img/icons/icon-heart.svg";
 import cartIcon from "../assets/img/icons/icon-cart.svg"; 
 import userIcon from "../assets/img/icons/icon-user.svg";
+import heart from "../assets/img/icons/heart.png";
+import user from "../assets/img/icons/user.png";
+import logOut from "../assets/img/icons/log-out.png";
+import location from "../assets/img/icons/location-alt.png";
+import tag from "../assets/img/icons/tag.png";
+import options from "../assets/img/icons/options.png";
+import left from "../assets/img/icons/arrow-small-left.png";
+import right from "../assets/img/icons/arrow-small-right.png";
 export {
   plus,
   btnImg,
@@ -43,4 +51,12 @@ export {
   wishlistIcon,
   cartIcon,
   compareIcon,
+  location,
+  user,
+  heart,
+  tag,
+  options,
+  logOut,
+  left,
+  right,
 };

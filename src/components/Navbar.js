@@ -3,7 +3,7 @@ import "../assets/CSS/Navbar.css";
 import {
   plus,
   btnImg,
-  headphones,
+  // headphones,
   category1,
   category2,
   category3,
@@ -23,6 +23,12 @@ import {
   wishlistIcon,
   cartIcon,
   compareIcon,
+  location,
+  user,
+  heart,
+  tag,
+  options,
+  logOut,
 } from "./images";
 
 const Navbar = () => {
@@ -132,7 +138,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary sub-header">
         <div className="container-fluid">
           <a className="navbar-brand logo" href="/">
-            <img src={logo} alt="logo" width={'180px'} />
+            <img src={logo} alt="logo" width={"180px"} />
           </a>
           <button
             className="navbar-toggler"
@@ -167,9 +173,7 @@ const Navbar = () => {
                 <img src={loc} alt="location" height={"16px"} />
                 <select className="form-select " id="floatingSelect">
                   <option defaultValue>Alabama</option>
-                  <option>
-                    {/* <input placeholder="Your location" /> */}
-                  </option>
+                  <option>{/* <input placeholder="Your location" /> */}</option>
                   <option className="nav-item" value="1">
                     Alabama
                   </option>
@@ -210,47 +214,59 @@ const Navbar = () => {
                 </a>
                 <a href="">Cart</a>
               </div>
-              <div className="header-action-icon-2">
+              <div className="header-action-icon-2 d-flex">
                 <a href="page-account.html">
                   <img className="svgInject" alt="Nest" src={userIcon} />
                 </a>
-                <a href="page-account.html">Account</a>
-                {/* <div className="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
-                      <ul>
-                        <li>
-                          <a href="page-account.html">
-                            <i className="fi fi-rs-user mr-10"></i>My Account
-                          </a>
-                        </li>
-                        <li>
-                          <a href="page-account.html">
-                            <i className="fi fi-rs-location-alt mr-10"></i>Order
-                            Tracking
-                          </a>
-                        </li>
-                        <li>
-                          <a href="page-account.html">
-                            <i className="fi fi-rs-label mr-10"></i>My Voucher
-                          </a>
-                        </li>
-                        <li>
-                          <a href="shop-wishlist.html">
-                            <i className="fi fi-rs-heart mr-10"></i>My Wishlist
-                          </a>
-                        </li>
-                        <li>
-                          <a href="page-account.html">
-                            <i className="fi fi-rs-settings-sliders mr-10"></i>
-                            Setting
-                          </a>
-                        </li>
-                        <li>
-                          <a href="page-login.html">
-                            <i className="fi fi-rs-sign-out mr-10"></i>Sign out
-                          </a>
-                        </li>
-                      </ul>
-                    </div> */}
+                <div className="nav-item dropdown my-account-dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="page-account.html"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Account
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="/">
+                      <img src={user} alt="user"/>
+                        <p>My Account</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/">
+                      <img src={location} alt="location-alt"/>
+                        <p>Order Tracking</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/">
+                      <img src={tag} alt="label"/>
+                      <p>My Voucher</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/">
+                      <img src={heart} alt="heart"/>
+                      <p>My Wishlist</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/">
+                      <img src={options} alt="settings"/>
+                      <p>Setting</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/">
+                      <img src={logOut} alt="sign-out"/>
+                        <p>Sign out</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

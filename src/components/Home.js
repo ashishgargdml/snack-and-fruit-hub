@@ -4,6 +4,7 @@ import "../assets/CSS/Home.css";
 import Navbar from "./Navbar";
 import Crousel from "./Crousel";
 import MiddleBanner from "./MiddleBanner";
+import Cards from "./Cards";
 
 const Home = () => {
   return (
@@ -12,12 +13,14 @@ const Home = () => {
         <Navbar />
       </header>
       <main>
-          <Crousel />
-          <MiddleBanner />
+        <Crousel />
+        <div className="slider">
+          <Cards />
+        </div>
+        <MiddleBanner />
       </main>
       <footer>
-
-          <Footer />
+        <Footer />
       </footer>
     </>
   );

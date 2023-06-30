@@ -1,0 +1,31 @@
+.mapped-content h6 {
+font-weight: 700;
+}
+
+.mapped-content {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 10px;
+text-align: center;
+
+}
+
+.mapped-content:hover {
+    border: 1px solid #acd6c2;
+    border-radius: 8px;
+}
+
+.mapped-content h6:hover {
+    color: #3bb77e;
+}
+
+.custom-btn-ctrl button{
+border-radius: 20px;
+border: none;
+width: 40px;
+height: 40px;
+}
+
+.custom-btn-ctrl button:hover {
+    background-color: #3bb77e;
+}

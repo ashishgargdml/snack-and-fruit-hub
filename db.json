@@ -1,0 +1,59 @@
+{
+  "hotels": [
+    {
+      "imageSrc": "require('../assets/img/catagory/cat-1.png')",
+      "title": "Vegetables",
+      "items": 72
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-2.png",
+      "title": "Strawberry",
+      "items": 36
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-3.png",
+      "title": "Snack",
+      "items": 56
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-4.png",
+      "title": "Black plum",
+      "items": 123
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-5.png",
+      "title": "Custard Apple",
+      "items": 34
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-6.png",
+      "title": "Red Apple",
+      "items": 54
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-7.png",
+      "title": "Peach",
+      "items": 14
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-8.png",
+      "title": "Organic Kiwi",
+      "items": 28
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-9.png",
+      "title": "Cake & Milk",
+      "items": 26
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-10.png",
+      "title": "Coffe & Tea",
+      "items": 89
+    },
+    {
+      "imageSrc": "../assets/img/catagory/cat-11.png",
+      "title": "Headphone",
+      "items": 87
+    }
+  ]
+}
