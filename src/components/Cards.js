@@ -58,10 +58,10 @@ const Cards = () => {
     <>
       {data.length ? (
         <div className="content">
-          <div className="controls custom-btn-ctrl">
-            <div class="title">
-              <h3>Featured Categories</h3>
-              <ul class="list-inline nav links">
+          <div className="d-flex justify-content-between">
+            <div class="title d-flex">
+              <h2>Featured Categories</h2>
+              <ul class="list-inline navcl links">
                 <li class="list-inline-item nav-item">
                   <a class="nav-link" href="shop-grid-right.html">
                     Cake &amp; Milk
@@ -84,16 +84,19 @@ const Cards = () => {
                 </li>
               </ul>
             </div>
+            <div className="controls custom-btn-ctrl">
             <button onClick={sliderRef?.slickPrev}>
               <img src={left} alt="left" />
             </button>
             <button onClick={sliderRef?.slickNext}>
               <img src={right} alt="right-arrow" />
             </button>
+            </div>
           </div>
           <Slider ref={setSliderRef} {...sliderSettings}>
             {data.map((card, index) => (
-              <div key={index} className="mapped-content">
+              <div key={index} className="mapped-content" style={{background :`${card.bg}`}}>
+              {console.log(`background : ${card.bg}`)}
                 <img src={card.imageSrc} alt={card.title} />
                 <h6>{card.title}</h6>
                 <p>{card.items} items</p>
