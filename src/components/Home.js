@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import Crousel from "./Crousel";
 import MiddleBanner from "./MiddleBanner";
 import Cards from "./Cards";
+import FeatureFooter from "./FeatureFooter";
+import Items from "./Items";
 
 const Home = () => {
   return (
@@ -17,10 +19,18 @@ const Home = () => {
         <div className="slider">
           <Cards />
         </div>
+        <div className="items-card">
+          <Items />
+        </div>
         <MiddleBanner />
       </main>
       <footer>
-        <Footer />
+        <header>
+          <FeatureFooter />
+        </header>
+        <main>
+          <Footer />
+        </main>
       </footer>
     </>
   );

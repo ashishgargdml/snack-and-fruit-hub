@@ -28,6 +28,7 @@ import tag from "../assets/img/icons/tag.png";
 import options from "../assets/img/icons/options.png";
 import left from "../assets/img/icons/arrow-small-left.png";
 import right from "../assets/img/icons/arrow-small-right.png";
+import smallRight from "../assets/img/icons/arrow-small-right.svg";
 export {
   plus,
   btnImg,
@@ -59,4 +60,5 @@ export {
   logOut,
   left,
   right,
+  smallRight,
 };

@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="row align-item-center top-header">
-        <ul className="nav nav-pills col-xl-4 col-lg-4">
+        <ul className="nav nav-pills w-auto">
           <li className="nav-item">
             <a className="nav-link" href="/">
               About Us
@@ -57,16 +57,18 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="nav align-item-center col-xl-5 col-lg-4">
+        <div className="nav align-item-center w-auto">
           <li className="nav-item" id="banner">
-            <a className="nav-link" href="/">
-              Banner
-            </a>
+            <marquee direction="up" height="50%">
+              <a className="nav-link" href="/">
+                Supper Value Deals - Save more with coupons
+              </a>
+            </marquee>
           </li>
         </div>
-        <ul className="nav nav-pills col-xl-3 col-lg-4">
+        <ul className="nav nav-pills w-auto">
           <li className="nav-item">
-            <a className="nav-link d-flex" href="/">
+            <a className="nav-link d-flex" href="/" style={{marginTop: '16px'}}>
               {" "}
               Need help? Call Us:<p> + 1800 900</p>
             </a>
@@ -136,7 +138,7 @@ const Navbar = () => {
         </ul>
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary sub-header">
-        <div className="container-fluid">
+        <div className="container-fluid" style={{ background: "#fff" }}>
           <a className="navbar-brand logo" href="/">
             <img src={logo} alt="logo" width={"180px"} />
           </a>
@@ -231,37 +233,37 @@ const Navbar = () => {
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" href="/">
-                      <img src={user} alt="user"/>
+                        <img src={user} alt="user" />
                         <p>My Account</p>
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/">
-                      <img src={location} alt="location-alt"/>
+                        <img src={location} alt="location-alt" />
                         <p>Order Tracking</p>
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/">
-                      <img src={tag} alt="label"/>
-                      <p>My Voucher</p>
+                        <img src={tag} alt="label" />
+                        <p>My Voucher</p>
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/">
-                      <img src={heart} alt="heart"/>
-                      <p>My Wishlist</p>
+                        <img src={heart} alt="heart" />
+                        <p>My Wishlist</p>
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/">
-                      <img src={options} alt="settings"/>
-                      <p>Setting</p>
+                        <img src={options} alt="settings" />
+                        <p>Setting</p>
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/">
-                      <img src={logOut} alt="sign-out"/>
+                        <img src={logOut} alt="sign-out" />
                         <p>Sign out</p>
                       </a>
                     </li>
@@ -373,7 +375,7 @@ const Navbar = () => {
             className="collapse navbar-collapse items"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 custom-list">
               <li className="nav-item ml-5">
                 <a className="nav-link active" aria-current="page" href="/">
                   Deals
@@ -422,6 +424,16 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <div class="hotline d-none d-lg-flex">
+              <img
+                src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-headphone.svg"
+                alt="hotline"
+              />
+              <div className="custom-support">
+                <h2>1900 - 888</h2>
+                <p>24/7 Support Center</p>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

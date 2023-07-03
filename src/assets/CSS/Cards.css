@@ -7,6 +7,7 @@
   border-radius: 8px;
   padding: 10px 10px;
   text-align: center;
+  background: #acd6c2;
 }
 
 .mapped-content:hover {
@@ -27,4 +28,26 @@
 
 .custom-btn-ctrl button:hover {
   background-color: #3bb77e;
+}
+
+.title .nav-link {
+    margin-top: 6px;
+    background: none;
+    font-size: 16px;
+    color: #253D4E;
+    font-weight: 700;
+}
+
+.title .nav-link:hover {
+  color:#3bb77e;
+}
+
+.slick-initialized .slick-slide {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.slick-list {
+  height: 250px;
 }

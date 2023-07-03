@@ -1,0 +1,25 @@
+.section-padding {
+  padding: 25px 0;
+}
+.banner-left-icon {
+  position: relative;
+  background: #f4f6fa;
+  padding: 30px 12px;
+  border-radius: 10px;
+}
+.banner-left-icon .banner-icon {
+  max-width: 60px;
+  margin-right: 20px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.banner-left-icon .banner-text h3 {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.banner-left-icon .banner-icon:hover{
+    transform: translate(0,-6px);
+}

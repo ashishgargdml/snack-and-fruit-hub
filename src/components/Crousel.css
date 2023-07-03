@@ -33,3 +33,15 @@
   width: 150px;
   background-color: #3BB77E;
 }
+
+.carousel-indicators [data-bs-target] {
+  border-top: none;
+  border-bottom: none;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators [data-bs-target]:active {
+  background: #3BB77E;
+}
