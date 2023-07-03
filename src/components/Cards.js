@@ -59,26 +59,26 @@ const Cards = () => {
       {data.length ? (
         <div className="content">
           <div className="d-flex justify-content-between">
-            <div class="title d-flex">
-              <h2>Featured Categories</h2>
-              <ul class="list-inline navcl links">
-                <li class="list-inline-item nav-item">
-                  <a class="nav-link" href="shop-grid-right.html">
+            <div className="title d-flex ">
+              <h2 style={{marginRight:"1.2em"}}>Featured Categories</h2>
+              <ul className="list-inline navcl links">
+                <li className="list-inline-item nav-item">
+                  <a className="nav-link mr-3" href="shop-grid-right.html">
                     Cake &amp; Milk
                   </a>
                 </li>
-                <li class="list-inline-item nav-item">
-                  <a class="nav-link" href="shop-grid-right.html">
+                <li className="list-inline-item nav-item">
+                  <a className="nav-link" href="shop-grid-right.html">
                     Coffes &amp; Teas
                   </a>
                 </li>
-                <li class="list-inline-item nav-item">
-                  <a class="nav-link active" href="shop-grid-right.html">
+                <li className="list-inline-item nav-item">
+                  <a className="nav-link active" href="shop-grid-right.html">
                     Pet Foods
                   </a>
                 </li>
-                <li class="list-inline-item nav-item">
-                  <a class="nav-link" href="shop-grid-right.html">
+                <li className="list-inline-item nav-item">
+                  <a className="nav-link" href="shop-grid-right.html">
                     Vegetables
                   </a>
                 </li>
@@ -96,7 +96,6 @@ const Cards = () => {
           <Slider ref={setSliderRef} {...sliderSettings}>
             {data.map((card, index) => (
               <div key={index} className="mapped-content" style={{background :`${card.bg}`}}>
-              {console.log(`background : ${card.bg}`)}
                 <img src={card.imageSrc} alt={card.title} />
                 <h6>{card.title}</h6>
                 <p>{card.items} items</p>

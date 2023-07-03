@@ -6,8 +6,8 @@
 .custom {
   font-family: "Quicksand";
   text-align: left;
-  left: 100px;
-  margin-bottom: 130px;
+  left: 7%;
+  margin-bottom: 8%;
 }
 
 .custom h1 {
@@ -44,4 +44,78 @@
 
 .carousel-indicators [data-bs-target]:active {
   background: #3BB77E;
+}
+
+@media  (max-width: 1282px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    /* left: 7; */
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 40px !important;
+  }
+
+  .custom p {
+    font-size: 20px;
+  }
+  .news-form input {
+    padding: 0px 14px;
+    width: auto;
+  }
+  
+  .news-form button {
+    width: auto;
+  }
+}
+
+@media  (max-width: 768px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    /* left: 7; */
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 28px !important;
+  }
+
+  .custom p {
+    font-size: 14px;
+  }
+  .news-form input {
+    padding: 0px 10px;
+    width: auto;
+    height: 44px;
+
+  }
+  .news-form button {
+    height: 44px;
+  }
+}
+
+@media  (max-width: 584px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 18px !important;
+  }
+
+  .custom p {
+    font-size: 8px;
+  }
+  .news-form input {
+    padding: 0px 6px;
+    width: auto;
+    height: 30px;
+
+  }
+  .news-form button {
+    /* padding: 0px -10px; */
+    height: 20px;
+  }
 }

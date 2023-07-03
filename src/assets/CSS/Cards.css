@@ -33,12 +33,14 @@
   background-color: #3bb77e;
 }
 
+
 .title .nav-link {
-    margin-top: 6px;
     background: none;
     font-size: 16px;
     color: #253D4E;
     font-weight: 700;
+    margin-right:1.2em;
+    margin-top: 0.8em;
 }
 
 .title .nav-link:hover {
@@ -53,4 +55,10 @@
 
 .slick-list {
   height: 250px;
+}
+
+@media (max-width:768px) {
+  .d-flex {
+    display: block !important;
+  }
 }

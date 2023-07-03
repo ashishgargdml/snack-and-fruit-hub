@@ -63,9 +63,8 @@
   background: #3bb77e;
   border: #3bb77e;
   border-radius: 5px;
-  padding: 0px 16px;
+  padding: 0px 10px;
   font-size: 18px;
-  height: 40px;
   color: white;
   cursor: pointer;
 }
@@ -222,7 +221,7 @@ option:hover {
   outline: none;
   margin: 0px 10px;
   line-height: 50px;
-
+  background: #fff;
   font-size: 14px;
   font-weight: bolder;
   color: #253d4e;

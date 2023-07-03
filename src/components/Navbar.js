@@ -59,7 +59,7 @@ const Navbar = () => {
         </ul>
         <div className="nav align-item-center w-auto">
           <li className="nav-item" id="banner">
-            <marquee direction="up" height="50%">
+            <marquee direction="up" height="50%" scrolldelay='300'>
               <a className="nav-link" href="/">
                 Supper Value Deals - Save more with coupons
               </a>
@@ -424,7 +424,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <div class="hotline d-none d-lg-flex">
+            <div className="hotline d-none d-lg-flex">
               <img
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-headphone.svg"
                 alt="hotline"
