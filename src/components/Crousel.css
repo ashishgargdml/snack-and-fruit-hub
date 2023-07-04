@@ -92,6 +92,7 @@
   }
   .news-form button {
     height: 44px;
+    font-size: 10px;
   }
 }
 
@@ -115,7 +116,38 @@
 
   }
   .news-form button {
-    /* padding: 0px -10px; */
     height: 20px;
+  }
+}
+
+@media  (max-width: 468px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 14px !important;
+  }
+
+  .custom p {
+    font-size: 6px;
+  }
+  .news-form input {
+    padding: 0px 6px;
+    width: auto;
+    height: 20px;
+
+  }
+  .news-form button {
+    height: 10px !important;
+    padding: 10px 40px !important;
+  }
+
+  .news-form button strong {
+    position: absolute;
+    top: 71%;
+    font-size: 8px;
+    left: 64%;
   }
 }

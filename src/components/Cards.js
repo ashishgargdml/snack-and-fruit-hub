@@ -104,7 +104,7 @@ const Cards = () => {
           </Slider>
         </div>
       ) : (
-        <></>
+        <>Fetching</>
       )}
     </>
   );

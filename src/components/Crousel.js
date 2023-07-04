@@ -41,7 +41,7 @@ const Crousel = () => {
                   id=".."
                 />
                 <button className="btn btn-success rounded-end-pill border-0" type="submit">
-                  Subscribe
+                  <strong>Subscribe</strong>
                 </button>
               </form>
             </div>
