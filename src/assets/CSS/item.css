@@ -59,6 +59,7 @@
     flex-wrap: wrap;
     border-radius: 15px;
     margin: 20px 0px;
+    border: 1px solid #ececec;
 
 }
 
@@ -66,8 +67,8 @@
     border: 1px solid #ececec;
 }
 
-.card img:hover{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+.banner-container .card img:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid #BCE3C9;
 }
 
@@ -149,10 +150,14 @@
     flex-wrap: wrap;
 }
 
+.newsletter-content form input {
+    padding-left: 20px;
+}
+
 @media screen and (max-width: 992px) {
-    .custom-links-list {
+    /* .custom-links-list {
         display: block;
-    }
+    } */
 }
 
 @media (max-width:768px) {
