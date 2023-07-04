@@ -11,6 +11,10 @@
     transition: 1s;
     -webkit-transition: 2s ease-in-out;
 }
+
+.text-bg-dark {
+    background-color: white !important;
+    }
 .card:hover .hover-img {
     display: inline;
 }
@@ -53,12 +57,16 @@
     grid-template-columns: repeat(3, 1fr);
     width: auto;
     flex-wrap: wrap;
-    border: 1px solid #ececec;
     border-radius: 15px;
+    margin: 20px 0px;
 
 }
 
-.card:hover{
+.banner-container .card img {
+    border: 1px solid #ececec;
+}
+
+.card img:hover{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
     border: 1px solid #BCE3C9;
 }
@@ -131,7 +139,7 @@
 }
 
 .custom-banners .card-img {
-    width: auto;
+    width: 100%;
     max-width: 526px;
     height: auto;
 }
@@ -150,5 +158,27 @@
 @media (max-width:768px) {
     .d-flex {
       display: block !important;
+    }
+  }
+
+  @media (max-width:448px) {
+    .custom-banners .card-img-overlay {
+        display: block;
+        top: 10%;
+    }
+    .custom-banners h4 {
+        font-size: 18px;
+        min-height: auto;
+        top: 4%;
+    }
+    .custom-banners a {
+        padding: 7px 8px 7px 12px;
+        border: none;
+        background-color: #3bb77e;
+        color: #fff;
+        font-size: 10px;
+        text-transform: none;
+        display: inline-block;
+        line-height: 1;
     }
   }

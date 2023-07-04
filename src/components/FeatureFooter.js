@@ -10,11 +10,7 @@ const FeatureFooter = () => {
   return (
     <>
       <section className="featured section-padding">
-        <div className="m-3">
-          {" "}
-          <div className="row">
-            <div className="col">
-              {" "}
+            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay="0"
@@ -30,7 +26,7 @@ const FeatureFooter = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".1s"
@@ -45,7 +41,7 @@ const FeatureFooter = () => {
                 </div>{" "}
               </div>{" "}
             </div>{" "}
-            <div className="col">
+            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".2s"
@@ -60,7 +56,7 @@ const FeatureFooter = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".3s"
@@ -75,7 +71,7 @@ const FeatureFooter = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".4s"
@@ -89,7 +85,7 @@ const FeatureFooter = () => {
                 </div>
               </div>
             </div>{" "}
-            <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
+            <div className="d-xl-none">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".5s"
@@ -104,8 +100,6 @@ const FeatureFooter = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </section>
     </>
   );

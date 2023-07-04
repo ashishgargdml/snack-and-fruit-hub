@@ -87,67 +87,41 @@
   .news-form input {
     padding: 0px 10px;
     width: auto;
-    height: 44px;
+    height: 32px;
+    font-size: 14px;
 
   }
   .news-form button {
-    height: 44px;
-    font-size: 10px;
-  }
-}
-
-@media  (max-width: 584px) {
-  .custom {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  .custom h1 {
-    font-size: 18px !important;
-  }
-
-  .custom p {
-    font-size: 8px;
-  }
-  .news-form input {
-    padding: 0px 6px;
-    width: auto;
+    padding: 0px 12px;
     height: 30px;
-
-  }
-  .news-form button {
-    height: 20px;
+    font-size: 12px;
   }
 }
 
-@media  (max-width: 468px) {
+
+@media  (max-width: 548px) {
   .custom {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
   }
   .custom h1 {
-    font-size: 14px !important;
+    font-size: 22px !important;
   }
 
   .custom p {
-    font-size: 6px;
+    font-size: 14px;
   }
   .news-form input {
-    padding: 0px 6px;
+    padding: 0px 10px;
     width: auto;
-    height: 20px;
+    height: 28px;
+    font-size: 14px;
 
   }
   .news-form button {
-    height: 10px !important;
-    padding: 10px 40px !important;
-  }
-
-  .news-form button strong {
-    position: absolute;
-    top: 71%;
-    font-size: 8px;
-    left: 64%;
+    padding: 0px 12px;
+    height: 26px;
+    font-size: 12px;
   }
 }

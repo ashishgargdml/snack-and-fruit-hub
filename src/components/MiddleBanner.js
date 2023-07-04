@@ -10,7 +10,7 @@ const MiddleBanner = () => {
           <div className="row">
             <div className="col-lg-12 ">
               <div className="position-relative newsletter-inner d-flex flex-wrap justify-content-around">
-                <div className="newsletter-content ">
+                <div className="newsletter-content">
                   <h2 className="mb-20">
                     Stay home & get your daily <br />
                     needs from our shop
