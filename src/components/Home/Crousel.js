@@ -1,7 +1,8 @@
 import React from "react";
-import slider1 from "../assets/img/slider-1.png";
-import slider2 from "../assets/img/slider-2.png";
-import './Crousel.css'
+import slider1 from "../../assets/img/slider-1.png";
+import slider2 from "../../assets/img/slider-2.png";
+import '../../assets/CSS/Crousel.css'
+
 
 const Crousel = () => {
   return (
@@ -33,14 +34,13 @@ const Crousel = () => {
                 grocery deals
               </h1>
               <p className="mb-65">Sign up for the daily newsletter</p>
-              <form className="news-form">
+              <form className="news-form d-flex">
                 <input
-                className="border-0 rounded-start-pill"
                   type="email"
                   placeholder="Your emaill address"
                   id=".."
                 />
-                <button className="btn btn-success rounded-end-pill border-0" type="submit">
+                <button className="btn" type="submit">
                   <strong>Subscribe</strong>
                 </button>
               </form>
@@ -56,14 +56,13 @@ const Crousel = () => {
                 Big discount
               </h1>
               <p className="mb-65">Save upto 50% off on your first order</p>
-              <form className="news-form">
+              <form className="news-form d-flex">
                 <input
-                className="border-0 rounded-start-pill"
                   type="email"
                   placeholder="Your emaill address"
                   id=".."
                 />
-                <button className="btn btn-success rounded-end-pill border-0" type="submit" tabIndex="-1">
+                <button className="btn" type="submit" tabIndex="-1">
                   Subscribe
                 </button>
               </form>

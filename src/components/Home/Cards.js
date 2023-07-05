@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { left, right } from "./images";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import "../assets/CSS/Cards.css";
+import "../../assets/CSS/Cards.css";
 
 const Cards = () => {
   const [data, setData] = useState([]);

@@ -1,6 +1,7 @@
 import React from "react";
-import "../assets/CSS/item.css";
+import "../../assets/CSS/item.css";
 import { smallRight } from "./images";
+import Star from "../Rating/Rating"
 
 const Items = () => {
   return (
@@ -186,6 +187,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+          <Star />
         </div>
         <div className="card">
           <a href="shop-product-right.html">
@@ -206,6 +208,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+            <Star />
         </div>
         <div className="card">
           <a href="shop-product-right.html">
@@ -226,6 +229,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+          <Star />
         </div>
         <div className="card">
           <a href="shop-product-right.html">
@@ -246,6 +250,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+          <Star />
         </div>
         <div className="card">
           <a href="shop-product-right.html">
@@ -266,6 +271,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+          <Star />
         </div>
         <div className="card">
           <a href="shop-product-right.html">
@@ -286,6 +292,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+          <Star />
         </div>
         <div className="card">
           <a href="shop-product-right.html">
@@ -306,6 +313,7 @@ const Items = () => {
               Seeds of Change Organic Quinoa, Brown, & Red Rice
             </p>
           </div>
+          <Star />
         </div>
       </div>
     </>

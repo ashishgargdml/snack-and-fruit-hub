@@ -1,16 +1,16 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../components/Home/Footer";
 import "../assets/CSS/Home.css";
-import Navbar from "./Navbar";
-import Crousel from "./Crousel";
-import MiddleBanner from "./MiddleBanner";
-import Cards from "./Cards";
-import FeatureFooter from "./FeatureFooter";
-import Items from "./Items";
+import Navbar from "../components/Home/Navbar";
+import Crousel from "../components/Home/Crousel";
+import MiddleBanner from "../components/Home/MiddleBanner";
+import Cards from "../components/Home/Cards";
+import FeatureFooter from "../components/Home/FeatureFooter";
+import Items from "../components/Home/Items";
 
 const Home = () => {
   return (
-    <>
+    <div className="container">
       <header>
         <Navbar />
       </header>
@@ -32,7 +32,7 @@ const Home = () => {
           <Footer />
         </main>
       </footer>
-    </>
+    </div>
   );
 };
 

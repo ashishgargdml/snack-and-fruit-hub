@@ -24,6 +24,7 @@
     grid-template-columns: repeat(auto-fill,minmax(260px , 1fr));
     align-items: center;
     margin: 50px 0px;
+    text-align: center;
 }
 
 .col {
@@ -48,7 +49,7 @@
 }
 
 .card-container .card {
-    margin-right: 15px; 
+    margin: 0px 7px; 
     margin-bottom: 20px
 }
 
@@ -141,7 +142,7 @@
 
 .custom-banners .card-img {
     width: 100%;
-    max-width: 526px;
+    max-width: 516px;
     height: auto;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/CSS/Navbar.css";
+import "../../assets/CSS/Navbar.css";
 import {
   plus,
   btnImg,

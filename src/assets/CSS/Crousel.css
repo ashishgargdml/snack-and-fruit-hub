@@ -1,0 +1,328 @@
+/* .custom {
+  font-family: "Quicksand";
+  text-align: left;
+  left: 7%;
+  top: 10%;
+  margin-bottom: 8%;
+}
+
+.custom h1 {
+    font-size: 72px;
+  font-weight: 700;
+  color: #253d4e;
+}
+
+.custom p {
+    font-size: 30px;
+}
+
+.news-form {
+  display: flex;
+}
+
+.news-form input {
+  padding: 20px 20px;
+  width: 300px;
+}
+
+.news-form button {
+  width: 150px;
+  background-color: #3BB77E;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-top: none;
+  border-bottom: none;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators [data-bs-target]:active {
+  background: #3BB77E;
+}
+
+@media  (max-width: 1282px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    left: 7;
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 40px !important;
+  }
+
+  .custom p {
+    font-size: 20px;
+  }
+  .news-form input {
+    padding: 0px 16px;
+    width: auto;
+    height: 46px;
+    font-size: 14px;
+
+  }
+  .news-form button {
+    padding: 0;
+    width: auto;
+    height: 44px;
+    font-size: 12px;
+  }
+}
+
+@media  (max-width: 768px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    left: 7;
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 28px !important;
+  }
+
+  .custom p {
+    font-size: 14px;
+  }
+  .news-form input {
+    padding: 0px 10px;
+    width: auto;
+    height: 32px;
+    font-size: 14px;
+
+  }
+  .news-form button {
+    padding: 0px 12px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+@media  (max-width: 644px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .custom h1 {
+    font-size: 22px !important;
+  }
+
+  .custom p {
+    font-size: 14px;
+  }
+  .news-form input {
+    padding: 0px 10px;
+    width: auto;
+    height: 28px;
+    font-size: 14px;
+
+  }
+  .news-form button {
+    padding: 0px 12px;
+    height: 26px;
+    font-size: 12px;
+  }
+  .carousel-indicators [data-bs-target] {
+    display: none;
+  }
+}
+
+@media  (max-width: 496px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    top: 10% !important;
+  }
+  .custom h1 {
+    font-size: 12px !important;
+    margin-bottom: 6px;
+  }
+
+  .custom p {
+    font-size: 8px;
+    margin-bottom: 6px;
+  }
+  .news-form input {
+    padding: 0px 10px;
+    width: auto;
+    height: 20px;
+    font-size: 8px;
+  }
+  .news-form button {
+    padding: 0px 10px !important;
+    height: 18px;
+    font-size: 8px !important;
+  }
+  .carousel-indicators [data-bs-target] {
+    display: none;
+  }
+} */
+
+.carousel .carousel-inner {
+}
+
+.carousel .carousel-inner .carousel-caption form {
+  background-color: #fff;
+  max-width: 450px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 4;
+  justify-content: space-between;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  left: 7%;
+  top: 10%;
+  padding-top: 1.25rem;
+  /* padding-bottom: 1.25rem; */
+  color: #fff;
+  text-align: left;
+}
+
+.carousel .carousel-inner img {
+  /* position: absolute;
+  right: 50px;
+  bottom: 0;
+  max-width: 40%; */
+  min-height: 312px;
+}
+
+.carousel .carousel-inner .carousel-caption h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.carousel .carousel-inner .carousel-caption p {
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 65px !important;
+}
+
+button[type="submit"] {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 40px;
+  color: #ffffff;
+  border: none;
+  background-color: #3bb77e;
+  border: 1px solid #29a56c;
+  border-radius: 50px;
+}
+
+.carousel .carousel-inner .carousel-caption form input {
+  border: 0;
+  height: 74px;
+  border-radius: 50px 0 0 50px;
+  padding-left: 58px;
+  outline: none;
+  background: url(https://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-plane.png)
+    no-repeat 25px center;
+}
+
+.carousel .carousel-inner .carousel-caption form button {
+  border: 0;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.carousel .carousel-inner .carousel-caption form button:hover {
+  background-color: #29a56c;
+  color: #fff;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-top: none;
+  border-bottom: none;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.display-2 {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.carousel-indicators [data-bs-target]:active {
+  background: #3bb77e;
+}
+
+@media only screen and (max-width: 1400px) {
+  .display-2 {
+    font-size: 64px;
+  }
+  .carousel .carousel-inner .carousel-caption form {
+    display: flex !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    left: 5%;
+    top: 5%;
+    padding-top: 0;
+    /* padding-bottom: 1.25rem; */
+    color: #fff;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1248px) {
+  .display-2 {
+    font-size: 52px;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    left: 5%;
+    top: 5%;
+    padding-top: 0;
+    /* padding-bottom: 1.25rem; */
+    color: #fff;
+    text-align: left;
+  }
+  .carousel .carousel-inner .carousel-caption p {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel .carousel-inner .carousel-caption form {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  .carousel .carousel-inner h1 {
+    font-size: 32px;
+  }
+  .carousel .carousel-inner .carousel-caption p {
+    font-size: 20px;
+    margin-bottom: 25px !important;
+  }
+  .carousel .carousel-inner {
+    padding: 20px;
+  }
+  .carousel form {
+    margin: 15px 0;
+  }
+  .carousel-inner button[type="submit"] {
+    padding: 12px 20px;
+  }
+  .carousel .carousel-inner .carousel-caption form input {
+    height: 64px;
+    width: 90%;
+    font-size: 16px;
+  }
+}

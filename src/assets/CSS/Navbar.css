@@ -63,7 +63,7 @@
   background: #3bb77e;
   border: #3bb77e;
   border-radius: 5px;
-  padding: 0px 10px;
+  padding: 0px 8px;
   font-size: 18px;
   color: white;
   cursor: pointer;
@@ -103,7 +103,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.top-header > ul > li  {
+.top-header > ul > li {
   margin-right: 20px;
   position: relative;
   display: flex;
@@ -116,15 +116,15 @@
 }
 
 .top-header > ul > li:before {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 1px;
-    height: 10px;
-    background: #dedfe2;
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background: #dedfe2;
 }
 
 .top-header a {
@@ -147,7 +147,6 @@
   margin-bottom: 20px;
   background: #fff;
 }
-
 
 .sub-header .logo {
   width: 230px;
@@ -193,7 +192,7 @@ option:hover {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: white!important;
+  background-color: white !important;
 }
 
 .sub-header .custom-input {
@@ -244,7 +243,7 @@ option:hover {
   display: flex;
   padding: 10px 10px;
   flex-wrap: wrap;
-  color: #253D4E;
+  color: #253d4e;
 }
 
 .my-account-dropdown a img {
@@ -286,7 +285,7 @@ option:hover {
 }
 
 .last-header .dropdown-menu .dropdown-item img {
-  max-width: 30px!important;
+  max-width: 30px !important;
 }
 
 .hotline h2 {
@@ -302,11 +301,11 @@ option:hover {
   margin-right: 10px;
 }
 
-.hotline p{
+.hotline p {
   font-weight: 500;
   font-size: 12px;
   font-family: "Lato", sans-serif;
-  color: #7E7E7E;
+  color: #7e7e7e;
   display: block;
   letter-spacing: 0.9px;
   margin-top: -10px;
@@ -317,7 +316,6 @@ option:hover {
   flex-direction: column;
   height: 30px;
 }
-
 
 ::-webkit-scrollbar {
   width: 1px;
@@ -340,6 +338,11 @@ option:hover {
 @media screen and (max-width: 768px) {
   .flex {
     flex-wrap: wrap;
+  }
+  .browser-btn {
+    padding: 0px 6px;
+    font-size: 15px;
+    line-height: 0.9;
   }
 }
 
