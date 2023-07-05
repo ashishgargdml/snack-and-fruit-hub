@@ -27,15 +27,13 @@
     text-align: start;
 }
 
-.col {
-    margin: 10px 20px;
-    margin-left: 0px;
-}
-
-.card-img-top {
+.card-container .card .card-img-top {
     height: 245px;
     width: 245px !important;
-    margin: 0 auto;
+}
+
+.card-container .card a {
+    text-align: center;
 }
 
 .card-title {
@@ -44,13 +42,19 @@
     /* margin: 0 0 0 7px; */
 }
 
-.card-text {
+.card-body a {
+    text-decoration: none;
+}
+
+
+.card-body a .card-text {
     font-family: "Quicksand", sans-serif;
     color: #253D4E;
     font-size: 16px;
     font-weight: 900;
     cursor: pointer;
     margin-bottom: 0;
+    text-align: start;
 }
 
 .card-body .product-content-wrap .product-price span.old-price {

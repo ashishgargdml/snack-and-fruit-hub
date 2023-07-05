@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./item.css";
 import { smallRight } from "../images";
 import Star from "../../Rating/Rating";
 
 const Items = () => {
+  const [data, setData] = useState([]);
+  const loadData = async () => {
+    const response = (await axios.get("http://localhost:3003/products")).data;
+    setData(response);
+  };
+  useEffect(() => {
+    loadData();
+  }, []);
   return (
     <>
       <section className="banners mb-25">
@@ -168,318 +177,49 @@ const Items = () => {
         </ul>
       </div>
       <div className="card-container">
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
+        {data.length ? (
+          data.map((product, key) => {
+            return (
+              <div className="card" key={key}>
+                <a href="shop-product-right.html">
+                  <img
+                    className="default-img card-img-top"
+                    src={product.topImage}
+                    alt=""
+                  />
+                  <img className="hover-img" src={product.hoverImage} alt="" />
+                </a>
+                <div className="card-body">
+                  <p className="card-title">{product.title}</p>
+                  <a href="/">
+                    <h2 className="card-text">{product.text}</h2>
                   </a>
+                  <Star />
+                  <div className="product-content-wrap">
+                    <div className="company">
+                      <span className="font-small text-muted">
+                        By <a href="vendor-details-1.html">{product.company}</a>
+                      </span>
+                    </div>
+                    <div className="d-flex justify-content-between mt-4">
+                      <div className="product-price">
+                        <span>{product.newPrice}</span>
+                        <span className="old-price">{product.oldPrice}</span>
+                      </div>
+                      <div className="add-cart">
+                        <a className="add" href="shop-cart.html">
+                          <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <a href="shop-product-right.html">
-            <img
-              className="default-img card-img-top"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg"
-              alt=""
-            />
-            <img
-              className="hover-img"
-              src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
-              alt=""
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-title">Snack</p>
-            <h2 className="card-text">
-              Seeds of Change Organic Quinoa, Brown, & Red Rice
-            </h2>
-            <Star />
-            <div className="product-content-wrap">
-              <div className="company">
-                <span className="font-small text-muted">
-                  By <a href="vendor-details-1.html">NestFood</a>
-                </span>
-              </div>
-              <div className="d-flex justify-content-between mt-4">
-                <div className="product-price">
-                  <span>$28.85</span>
-                  <span className="old-price">$32.8</span>
-                </div>
-                <div className="add-cart">
-                  <a className="add" href="shop-cart.html">
-                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            );
+          })
+        ) : (
+          <>Loading...</>
+        )}
       </div>
     </>
   );

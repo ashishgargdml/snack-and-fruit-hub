@@ -66,5 +66,97 @@
       "items": 87,
       "bg": "red"
     }
+  ],
+  "products" : [
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg",
+      "title": "Snack",
+      "text": "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+      "company": "NestFood",
+      "newPrice" : "$28.85",
+      "oldPrice": "$32.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg",
+      "title": "Hodo Foods",
+      "text": "All Natural Italian-Style Chicken Meatballs",
+      "company": "Stouffer",
+      "newPrice" : "$52.85",
+      "oldPrice": "$55.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg",
+      "title": "Snack",
+      "text": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+      "company": "StarKist",
+      "newPrice" : "$48.85",
+      "oldPrice": "$52.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg",
+      "title": "Vegetables",
+      "text": "Foster Farms Takeout Crispy Classic Buffalo Wings",
+      "company": "NestFood",
+      "newPrice" : "$17.85",
+      "oldPrice": "$19.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg",
+      "title": "Pet Foods",
+      "text": "Blue Diamond Almonds Lightly Salted Vegetables",
+      "company": "NestFood",
+      "newPrice" : "$23.85",
+      "oldPrice": "$25.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-2.jpg",
+      "title": "Hodo Foods",
+      "text": "Chobani Complete Vanilla Greek Yogurt",
+      "company": "NestFood",
+      "newPrice" : "$54.85",
+      "oldPrice": "$55.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-2.jpg",
+      "title": "Meats",
+      "text": "Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g",
+      "company": "NestFood",
+      "newPrice" : "$32.85",
+      "oldPrice": "$33.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-2.jpg",
+      "title": "Snack",
+      "text": "Encore Seafoods Stuffed Alaskan Salmon",
+      "company": "NestFood",
+      "newPrice" : "$35.85",
+      "oldPrice": "$37.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-2.jpg",
+      "title": "Coffes",
+      "text": "Gorton’s Beer Battered Fish Fillets with soft paper",
+      "company": "Old El Paso",
+      "newPrice" : "$23.85",
+      "oldPrice": "$25.8"
+    },
+    {
+      "topImage": "http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-1.jpg",
+      "hoverImage" :"http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-2.jpg",
+      "title": "Cream",
+      "text": "Haagen-Dazs Caramel Cone Ice Cream Ketchup",
+      "company": "Tyson",
+      "newPrice" : "$22.85",
+      "oldPrice": "$24.8"
+    }    
   ]
 }
