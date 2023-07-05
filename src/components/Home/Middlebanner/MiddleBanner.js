@@ -1,6 +1,6 @@
 import React from "react";
-import newsLetter from "../../assets/img/banners/midBanner2.png";
-import "../../assets/CSS/MiddleBanner.css";
+import newsLetter from "../../../assets/img/banners/midBanner2.png";
+import "./MiddleBanner.css";
 
 const MiddleBanner = () => {
   return (

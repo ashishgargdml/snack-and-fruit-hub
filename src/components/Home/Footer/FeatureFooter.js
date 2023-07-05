@@ -1,10 +1,10 @@
 import React from "react";
-import "../../assets/CSS/FeatureFooter.css";
-import icon1 from "../../assets/img/icons/icon-1.svg";
-import icon2 from "../../assets/img/icons/icon-2.svg";
-import icon3 from "../../assets/img/icons/icon-3.svg";
-import icon4 from "../../assets/img/icons/icon-4.svg";
-import icon5 from "../../assets/img/icons/icon-5.svg";
+import "./FeatureFooter.css";
+import icon1 from "../../../assets/img/icons/icon-1.svg";
+import icon2 from "../../../assets/img/icons/icon-2.svg";
+import icon3 from "../../../assets/img/icons/icon-3.svg";
+import icon4 from "../../../assets/img/icons/icon-4.svg";
+import icon5 from "../../../assets/img/icons/icon-5.svg";
 // import icon6 from "../../assets/img/icons/icon-5.svg";
 const FeatureFooter = () => {
   return (

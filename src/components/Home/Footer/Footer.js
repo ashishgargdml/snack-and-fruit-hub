@@ -1,15 +1,15 @@
 import React from "react";
-import "../../assets/CSS/Footer.css";
-import logo from "../../assets/img/logo.svg";
-import phone from "../../assets/img/phone.png";
-import fb from "../../assets/img/fb.png";
-import insta from "../../assets/img/ig.png";
-import twitter from "../../assets/img/twitter.png";
-import pinterest from "../../assets/img/pinterest.png";
-import yt from "../../assets/img/youtube.png";
-import googlePlay from "../../assets/img/google-play.jpg";
-import appStore from "../../assets/img/app-store.jpg";
-import payment from "../../assets/img/payment-method.png";
+import "./Footer.css";
+import logo from "../../../assets/img/logo.svg";
+import phone from "../../../assets/img/phone.png";
+import fb from "../../../assets/img/fb.png";
+import insta from "../../../assets/img/ig.png";
+import twitter from "../../../assets/img/twitter.png";
+import pinterest from "../../../assets/img/pinterest.png";
+import yt from "../../../assets/img/youtube.png";
+import googlePlay from "../../../assets/img/google-play.jpg";
+import appStore from "../../../assets/img/app-store.jpg";
+import payment from "../../../assets/img/payment-method.png";
 
 const Footer = () => {
   return (

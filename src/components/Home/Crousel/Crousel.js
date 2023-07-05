@@ -1,7 +1,7 @@
 import React from "react";
-import slider1 from "../../assets/img/slider-1.png";
-import slider2 from "../../assets/img/slider-2.png";
-import '../../assets/CSS/Crousel.css'
+import slider1 from "../../../assets/img/slider-1.png";
+import slider2 from "../../../assets/img/slider-2.png";
+import './Crousel.css'
 
 
 const Crousel = () => {

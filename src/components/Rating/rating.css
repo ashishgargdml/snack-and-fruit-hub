@@ -1,0 +1,11 @@
+.rate-wrap {
+  display: flex;
+}
+
+.rate-wrap p {
+  margin-left: 5px;
+  color: #b6b6b6;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: -16px;
+}

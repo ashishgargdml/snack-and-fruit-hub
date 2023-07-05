@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/CSS/Navbar.css";
+import "./Navbar.css";
 import {
   plus,
   btnImg,
@@ -29,7 +29,7 @@ import {
   tag,
   options,
   logOut,
-} from "./images";
+} from "../images";
 
 const Navbar = () => {
   return (
