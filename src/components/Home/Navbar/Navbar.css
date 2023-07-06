@@ -96,6 +96,10 @@
   padding: 20px 10px;
 }
 
+.last-header .custom-list a:hover {
+  color: #3bb77e ;
+}
+
 .top-header {
   display: flex;
   justify-content: space-between;

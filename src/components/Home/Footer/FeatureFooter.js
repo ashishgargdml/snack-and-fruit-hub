@@ -10,7 +10,6 @@ const FeatureFooter = () => {
   return (
     <>
       <section className="featured section-padding">
-            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay="0"
@@ -25,8 +24,6 @@ const FeatureFooter = () => {
                   <p>Orders $50 or more</p>
                 </div>
               </div>
-            </div>
-            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".1s"
@@ -40,8 +37,6 @@ const FeatureFooter = () => {
                   <p>24/7 amazing services</p>
                 </div>{" "}
               </div>{" "}
-            </div>{" "}
-            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".2s"
@@ -55,8 +50,6 @@ const FeatureFooter = () => {
                   <p>When you sign up</p>
                 </div>
               </div>
-            </div>
-            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".3s"
@@ -70,8 +63,6 @@ const FeatureFooter = () => {
                   <p>Mega Discounts</p>
                 </div>
               </div>
-            </div>
-            <div className="">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"
                 data-wow-delay=".4s"
@@ -84,7 +75,6 @@ const FeatureFooter = () => {
                   <p>Within 30 days</p>
                 </div>
               </div>
-            </div>{" "}
             <div className="d-xl-none">
               <div
                 className="banner-left-icon d-flex align-items-center wow animateanimated animatefadeInUp"

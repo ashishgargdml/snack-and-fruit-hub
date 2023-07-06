@@ -33,7 +33,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div>
+    <>
       <div className="row align-item-center top-header">
         <ul className="nav nav-pills w-auto">
           <li className="nav-item">
@@ -437,7 +437,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 

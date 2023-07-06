@@ -33,7 +33,7 @@ const MiddleBanner = () => {
               </button>
             </form>
           </div>
-          <div>
+          <div className="image-wraper">
             <img src={newsLetter} alt="newsletter" />
           </div>
         </div>

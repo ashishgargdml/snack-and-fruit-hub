@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import "./item.css";
-import { smallRight } from "../images";
 import Star from "../../Rating/Rating";
 
-const Items = () => {
-  const [data, setData] = useState([]);
-  const loadData = async () => {
-    const response = (await axios.get("http://localhost:3003/products")).data;
-    setData(response);
-  };
-  useEffect(() => {
-    loadData();
-  }, []);
+const Items = ({ products }) => {
   return (
     <>
       <section className="banners mb-25">
@@ -177,8 +167,8 @@ const Items = () => {
         </ul>
       </div>
       <div className="card-container">
-        {data.length ? (
-          data.map((product, key) => {
+        {products.length ? (
+          products.map((product, key) => {
             return (
               <div className="card" key={key}>
                 <a href="shop-product-right.html">

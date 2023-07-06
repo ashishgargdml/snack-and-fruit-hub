@@ -1,8 +1,7 @@
 import React from "react";
 import slider1 from "../../../assets/img/slider-1.png";
 import slider2 from "../../../assets/img/slider-2.png";
-import './Crousel.css'
-
+import "./Crousel.css";
 
 const Crousel = () => {
   return (
@@ -26,65 +25,90 @@ const Crousel = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={slider1} className="d-block w-100 rounded-5" alt="slider1" />
-            <div className="carousel-caption text-black custom">
-              <h1 className="display-2 ">
-                Don’t miss amazing
-                <br />
-                grocery deals
-              </h1>
-              <p className="mb-65">Sign up for the daily newsletter</p>
-              <form className="news-form d-flex">
-                <input
-                  type="email"
-                  placeholder="Your emaill address"
-                  id=".."
-                />
-                <button className="btn" type="submit">
-                  <strong>Subscribe</strong>
-                </button>
-              </form>
+            <div className="newsletter mb-15 wow animate__animated animate__fadeIn">
+              <div className="newsletter-inner d-flex position-relative carousel-img-1">
+                <div className="newsletter-content">
+                  <h2 className="mb-20">
+                    Don’t miss amazing
+                    <br />
+                    grocery deals
+                  </h2>
+
+                  <p className="mb-45">
+                    Sign up for the daily newsletter
+                    {/* <span className="text-brand">Nest Mart</span> */}
+                  </p>
+
+                  <form className="form-subcriber d-flex ">
+                    <input
+                      type="email"
+                      placeholder="Your emaill address"
+                      id=".."
+                    />
+
+                    <button className="btn" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <div>{/* <img src={slider1} alt="newsletter" /> */}</div>
+              </div>
             </div>
           </div>
           <div className="carousel-item">
-            <img src={slider2} className="d-block w-100 rounded-5" alt="slider2" />
-            <div className="carousel-caption text-black custom">
-              <h1 className="display-2">
-                {" "}
-                Fresh Vegetables
-                <br />
-                Big discount
-              </h1>
-              <p className="mb-65">Save upto 50% off on your first order</p>
-              <form className="news-form d-flex">
-                <input
-                  type="email"
-                  placeholder="Your emaill address"
-                  id=".."
-                />
-                <button className="btn" type="submit" tabIndex="-1">
-                  Subscribe
-                </button>
-              </form>
+            <div className="crousel-item active newsletter mb-15 wow animate__animated animate__fadeIn">
+              <div className="newsletter-inner d-flex position-relative carousel-img-2">
+                <div className="newsletter-content">
+                  <h2 className="mb-20">
+                    Fresh Vegetables
+                    <br />
+                    Big discount
+                  </h2>
+
+                  <p className="mb-45">
+                    Save up to 50% off on your first order
+                    {/* <span className="text-brand">Nest Mart</span> */}
+                  </p>
+
+                  <form className="form-subcriber d-flex ">
+                    <input
+                      type="email"
+                      placeholder="Your emaill address"
+                      id=".."
+                    />
+
+                    <button className="btn" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <div>{/* <img src={slider2} alt="newsletter" /> */}</div>
+              </div>
             </div>
           </div>
         </div>
         <button
-          className="carousel-control-prev"
+          className="carousel-control-prev w-auto"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next w-auto"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
