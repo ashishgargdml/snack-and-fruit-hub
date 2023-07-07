@@ -29,6 +29,8 @@ import options from "../../assets/img/icons/options.png";
 import left from "../../assets/img/icons/arrow-small-left.png";
 import right from "../../assets/img/icons/arrow-small-right.png";
 import smallRight from "../../assets/img/icons/arrow-small-right.svg";
+import shuffle from "../../assets/img/icons/shuffle.png";
+import house from "../../assets/img/icons/house.png";
 export {
   plus,
   btnImg,
@@ -61,4 +63,6 @@ export {
   left,
   right,
   smallRight,
+  shuffle,
+  house,
 };
