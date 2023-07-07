@@ -223,14 +223,18 @@
 }
 
 .top-right-body .catagory,
-.top-right-body .price {
+.top-right-body .price,
+.top-right-body .new-products {
   border: 1px solid #ececec;
   padding: 30px;
   border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 }
 
 .top-right-body > .catagory > h4,
-.top-right-body > .price > h4 {
+.top-right-body > .price > h4,
+.top-right-body > .new-products > h4 {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 20px;
@@ -300,6 +304,16 @@
   background-size: 150px;
 }
 
+.top-right-body > .price > .range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.top-right-body > .price > .range > p > strong {
+  color: #3bb77e;
+}
+
 .top-right-body > .price > label {
   font-weight: 900;
   font-size: 14px;
@@ -315,12 +329,6 @@
   border-radius: 2px;
 }
 
-.top-right-body > .price > .chkbox > input[type=range]::-webkit-slider-runnable-track {
-  width: 80px;
-  -webkit-appearance: none;
-  color: #3bb77e;
-}
-
 .top-right-body > .price > .chkbox > input[type="checkbox"]:checked {
   background-color: #3bb77e;
   border-color: #3bb77e;
@@ -332,3 +340,112 @@
   color: #687188;
   cursor: pointer;
 }
+
+input[type="range"] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #3bb77e;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #3bb77e;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #3bb77e;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #3bb77e;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ddd;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #3bb77e;
+}
+
+.top-right-body > .price > button[type="submit"] {
+  border-radius: 5px !important;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 24px;
+  transition: all 300ms linear 0s;
+}
+
+.top-right-body > .price > button[type="submit"]:hover {
+  background: #fcbd46;
+  border: 1px solid #fcbd46;
+  transform: scaleX(1.2);
+}
+
+.top-right-body > .new-products > .single-new {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+  padding-bottom: 10px;
+}
+
+.top-right-body > .new-products > .single-new > .new-info > h5 {
+  font-size: 16px;
+  color: #3bb77e;
+  font-weight: 900;
+}
+
+.top-right-body > .new-products > .single-new > img {
+  margin-right: 20px;
+}
+
+.top-right-body p {
+  margin: 0;
+}
+
+.top-right-body > .banner-img {
+  background: url(https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-11.png)
+    no-repeat center;
+  background-size: cover;
+  min-height: 350px;
+  border: 1px solid #eceece;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.top-right-body > .banner-img > .banner-text {
+  position: relative;
+  top: 30%;
+  z-index: 2;
+  padding: 0 50px;
+}
+
+.top-right-body > .banner-img > .banner-text > span {
+  font-size: 14px;
+  color: #adadad;
+}
+
+.top-right-body > .banner-img > .banner-text > h4 {
+  font-weight: 700;
+}
+
+.top-right-body > .banner-img > .banner-text > h4 > strong {
+  color: #3bb77e;
+}
+

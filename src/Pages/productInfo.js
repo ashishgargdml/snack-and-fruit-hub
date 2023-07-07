@@ -1,7 +1,7 @@
 import React from "react";
 import "./productInfo.css";
 import Star from "../components/Rating/Rating";
-import { heart, shuffle, house } from "../components/Home/images";
+import { heart, shuffle, house, filter } from "../components/Home/images";
 
 const Product = () => {
   return (
@@ -175,24 +175,97 @@ const Product = () => {
             </div>
             <div className="price">
               <h4 className="fill-by">Fill by Price</h4>
-              <input type="range" /><br />
+              <input type="range" />
+              <br />
+              <div className="range">
+                <p>
+                  From: <strong>$0</strong>
+                </p>
+                <p>
+                  To: <strong>$2,000</strong>
+                </p>
+              </div>
               <label>Color</label>
               <div className="chkbox">
                 <input type="checkbox" />
-                <label>Red (56)</label><br />
+                <label>Red (56)</label>
+                <br />
                 <input type="checkbox" />
-                <label>Green (78)</label><br />
+                <label>Green (78)</label>
+                <br />
                 <input type="checkbox" />
-                <label>Blue (54)</label><br />
+                <label>Blue (54)</label>
+                <br />
               </div>
               <label>Item Condition</label>
               <div className="chkbox">
                 <input type="checkbox" />
-                <label>New (1506)</label><br />
+                <label>New (1506)</label>
+                <br />
                 <input type="checkbox" />
-                <label>Refurbished (27)</label><br />
+                <label>Refurbished (27)</label>
+                <br />
                 <input type="checkbox" />
-                <label>Used (45)</label><br />
+                <label>Used (45)</label>
+                <br />
+              </div>
+              <button type="submit">
+                <img src={filter} alt="filter" />
+                Filter
+              </button>
+            </div>
+            <div className="new-products">
+              <h4>New products</h4>
+              <div className="single-new">
+                <img
+                  src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-3.jpg"
+                  alt="thumbnail-1"
+                  height={"80px"}
+                />
+                <div className="new-info">
+                  <h5>Chen Cardigan</h5>
+                  <p>
+                    $99.50
+                    <Star />
+                  </p>
+                </div>
+              </div>
+              <div className="single-new">
+                <img
+                  src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-4.jpg"
+                  alt="thumbnail-2"
+                  height={"80px"}
+                />
+                <div className="new-info">
+                  <h5>Chen Sweater</h5>
+                  <p>
+                    $89.50
+                    <Star />
+                  </p>
+                </div>
+              </div>
+              <div className="single-new">
+                <img
+                  src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-5.jpg"
+                  alt="thumbnail-3"
+                  height={"80px"}
+                />
+                <div className="new-info">
+                  <h5>Colorful Jacket</h5>
+                  <p>
+                    $25
+                    <Star />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="banner-img">
+              {/* <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-11.png" alt="banner-11" height={'340px'} /> */}
+              <div className="banner-text">
+                <span>Organic</span>
+                <h4>Save 17% <br />
+                on <strong>Organic</strong><br />
+                Juice</h4>
               </div>
             </div>
           </div>
