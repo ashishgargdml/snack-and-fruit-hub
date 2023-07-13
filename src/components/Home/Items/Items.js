@@ -181,7 +181,7 @@ const Items = ({ products }) => {
                 </a>
                 <div className="card-body">
                   <p className="card-title">{product.title}</p>
-                  <a href="/">
+                  <a href="/product-info">
                     <h2 className="card-text">{product.text}</h2>
                   </a>
                   <Star />

@@ -262,7 +262,7 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <a className="dropdown-item" href="/login">
                         <img src={logOut} alt="sign-out" />
                         <p>Sign out</p>
                       </a>

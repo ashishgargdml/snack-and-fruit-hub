@@ -7,9 +7,11 @@ import shbag from "../img/shopping-bag.png";
 import shCart from "../img/shopping-cart.png";
 import out from "../img/out.png";
 import "./account.css";
+import { useNavigate } from "react-router-dom";
 
 const Account = () => {
   const [active, setActive] = useState("tab1");
+  const navigate = useNavigate()
   return (
     <>
       <header>
@@ -70,7 +72,7 @@ const Account = () => {
               <li
                 id="tab6"
                 className={active === "tab6" ? "active" : ""}
-                onClick={() => setActive("tab6")}
+                onClick={() => navigate('/login')}
               >
                 <img src={out} alt="i" />
                 Logout

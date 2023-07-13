@@ -22,7 +22,7 @@ const MiddleBanner = () => {
               <input
                 type="email"
                 placeholder="Your emaill address"
-                id=".."
+                id="..."
               />
 
               <button

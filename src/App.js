@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
-// import Home from "./Pages/Home/Home";
-// import Product from "./Pages/Product/productInfo";
-// import Cart from "./Pages/Cart/shopCart";
-// import Login from "./Pages/Login/login";
+import Home from "./Pages/Home/Home";
+import Product from "./Pages/Product/productInfo";
+import Cart from "./Pages/Cart/shopCart";
+import Login from "./Pages/Login/login";
 import Register from "./Pages/Register/register";
-// import Account from "./Pages/Account/account";
-// import Navbar from "./components/Home/Navbar/Navbar";
-// import MiddleBanner from "./components/Home/Middlebanner/MiddleBanner";
-// import FeatureFooter from "./components/Home/Footer/FeatureFooter";
-// import Footer from "./components/Home/Footer/Footer";
+import Account from "./Pages/Account/account";
+import Navbar from "./components/Home/Navbar/Navbar";
+import MiddleBanner from "./components/Home/Middlebanner/MiddleBanner";
+import FeatureFooter from "./components/Home/Footer/FeatureFooter";
+import Footer from "./components/Home/Footer/Footer";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -30,27 +31,32 @@ const App = () => {
           />
         </div>
       ) : (
-        <div className="container">
-          {/* <div className="container">
-          <header>
-            <Navbar />
-          </header>
-          <main>
-            <shopCart />
-                      <Login />
-            <MiddleBanner />
-          </main>
-          <footer>
+        <>
+          <div className="container">
             <header>
-              <FeatureFooter />
+              <Navbar />
             </header>
             <main>
-              <Footer />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/product-info" element={<Product />} />
+                <Route path="/shopping-cart" element={<Cart />} />
+                <Route path="/my-account" element={<Account />} />
+              </Routes>
+              <MiddleBanner />
             </main>
-          </footer>
-        </div> */}
-        <Register />
-        </div>
+            <footer>
+              <header>
+                <FeatureFooter />
+              </header>
+              <main>
+                <Footer />
+              </main>
+            </footer>
+          </div>
+        </>
       )}
     </>
   );

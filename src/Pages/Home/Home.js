@@ -23,10 +23,7 @@ const Home = () => {
   const catagories = data.length >0 ? data[0].catagories : [];
 
   return (
-    <div className="container">
-      <header>
-        <Navbar />
-      </header>
+    <>
       <main>
         <Crousel />
         <div className="slider">
@@ -35,17 +32,8 @@ const Home = () => {
         <div className="items-card">
           <Items products={products}/>
         </div>
-        <MiddleBanner />
       </main>
-      <footer>
-        <header>
-          <FeatureFooter />
-        </header>
-        <main>
-          <Footer />
-        </main>
-      </footer>
-    </div>
+    </>
   );
 };
 

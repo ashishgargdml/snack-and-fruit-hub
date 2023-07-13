@@ -30,6 +30,7 @@ import {
   options,
   logOut,
 } from "../images";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -59,7 +60,7 @@ const Navbar = () => {
         </ul>
         <div className="nav align-item-center w-auto">
           <li className="nav-item" id="banner">
-            <marquee direction="up" height="50%" scrolldelay='300'>
+            <marquee direction="up" height="50%" scrolldelay="300">
               <a className="nav-link" href="/">
                 Supper Value Deals - Save more with coupons
               </a>
@@ -68,7 +69,11 @@ const Navbar = () => {
         </div>
         <ul className="nav nav-pills w-auto">
           <li className="nav-item">
-            <a className="nav-link d-flex" href="/" style={{marginTop: '16px'}}>
+            <a
+              className="nav-link d-flex"
+              href="/"
+              style={{ marginTop: "16px" }}
+            >
               {" "}
               Need help? Call Us:<p> + 1800 900</p>
             </a>
@@ -139,8 +144,10 @@ const Navbar = () => {
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary sub-header">
         <div className="container-fluid" style={{ background: "#fff" }}>
-          <a className="navbar-brand logo" href="/">
-            <img src={logo} alt="logo" width={"180px"} />
+          <a className="navbar-brand logo" href="">
+            <Link to={"/"}>
+              <img src={logo} alt="logo" width={"180px"} />
+            </Link>
           </a>
           <button
             className="navbar-toggler"
@@ -156,7 +163,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <form className="d-flex custom-input" action="/">
-                <select className="select-active border-0" id="..">
+                <select className="select-active border-0" id="....">
                   <option>All Categories</option>
                   <option>Milks and Dairies</option>
                   <option>Wines & Alcohol</option>
@@ -169,7 +176,7 @@ const Navbar = () => {
                   <option>Noodles & Rice</option>
                   <option>Ice cream</option>
                 </select>
-                <input type="text" id="." placeholder="Search for items..." />
+                <input type="text" id="1.." placeholder="Search for items..." />
               </form>
               <li className="nav-item dropdown d-flex custom-drop-style">
                 <img src={loc} alt="location" height={"16px"} />
@@ -210,11 +217,13 @@ const Navbar = () => {
                 <a href="shop-wishlist.html">Wishlist</a>
               </div>
               <div className="header-action-icon-2 d-flex">
-                <a className="mini-cart-icon" href="shop-cart.html">
+                <a className="mini-cart-icon" href="/shopping-cart">
                   <img alt="Nest" src={cartIcon} />
                   {/* <span className="pro-count blue">2</span> */}
                 </a>
-                <a href="">Cart</a>
+                <a href="">
+                  <Link to={"/shopping-cart"}>Cart</Link>
+                </a>
               </div>
               <div className="header-action-icon-2 d-flex">
                 <a href="page-account.html">
@@ -232,10 +241,10 @@ const Navbar = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <Link className="dropdown-item" to="/my-account">
                         <img src={user} alt="user" />
                         <p>My Account</p>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/">
@@ -262,7 +271,7 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <a className="dropdown-item" href="/login">
                         <img src={logOut} alt="sign-out" />
                         <p>Sign out</p>
                       </a>

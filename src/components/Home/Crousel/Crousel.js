@@ -1,6 +1,4 @@
 import React from "react";
-import slider1 from "../../../assets/img/slider-1.png";
-import slider2 from "../../../assets/img/slider-2.png";
 import "./Crousel.css";
 
 const Crousel = () => {
@@ -74,7 +72,7 @@ const Crousel = () => {
                     <input
                       type="email"
                       placeholder="Your emaill address"
-                      id=".."
+                      id="."
                     />
 
                     <button className="btn" type="submit">
@@ -82,7 +80,6 @@ const Crousel = () => {
                     </button>
                   </form>
                 </div>
-                <div>{/* <img src={slider2} alt="newsletter" /> */}</div>
               </div>
             </div>
           </div>

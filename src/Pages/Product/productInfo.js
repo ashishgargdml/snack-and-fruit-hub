@@ -17,7 +17,7 @@ const Product = () => {
           <span>Cart</span>
         </nav>
       </header>
-      <main className="main-container">
+      <main className="new">
         <div className="top-body">
           <div className="left-fix">
             <div className="top-left-up">

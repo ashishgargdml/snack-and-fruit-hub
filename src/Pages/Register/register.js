@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./register.css";
 import { validEmail, validateEmail, passwordCheck, strongPassword } from "../Login/validator";
 import { house } from "../../components/Home/images";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [uname, setUname] = useState("");
@@ -52,7 +53,7 @@ const Register = () => {
           <h1>Create an Account</h1>
           <p>
             Already have an account?
-            <span style={{ color: "#3bb77e" }}>Login</span>
+            <Link style={{ color: "#3bb77e" }} to={'/login'} >Login</Link>
           </p>
           <div className="register-form">
             <input

@@ -4,7 +4,12 @@
   font-size: 100%;
 }
 
-.main-container {
+/* .main-container {
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+} */
+
+.new {
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
 }
@@ -474,6 +479,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   border-radius: 15px;
   padding: 40px 50px;
   margin-bottom: 50px;
+  display: block;
 }
 
 .left-fix > .content-body > .tabs > ul {
@@ -551,7 +557,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 }
 
 .left-fix > .content-body > .additional-info table tr th,
-td {
+.left-fix > .content-body > .additional-info table tr th td td {
   padding: 10px 20px;
   border: 1px solid #ececec;
   vertical-align: middle;

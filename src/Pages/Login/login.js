@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { house } from "../../components/Home/images";
 import { validEmail, validateEmail, passwordCheck } from "./validator";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const secCode = new RegExp(/8675/);
@@ -44,7 +45,7 @@ const Login = () => {
             <h1>Login</h1>
             <p>
               Don't have an account?{" "}
-              <span style={{ color: "#3bb77e" }}>Create Here</span>
+              <Link style={{ color: "#3bb77e" }} to={'/register'}>Create Here</Link>
             </p>
           </div>
           <div className="login-form">
