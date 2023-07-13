@@ -1,0 +1,237 @@
+.route-header {
+  display: flex;
+  flex: wrap;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7e7e7e;
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  font-family: "Quicksand", sans-serif;
+}
+
+.route-header > a > p {
+  margin: 0;
+}
+
+.route-header a {
+  text-decoration: none;
+  color: #3bb77e;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.route-header > a > img {
+  height: 16px;
+}
+
+.route-header a:hover {
+  color: #ecc06e;
+}
+
+.route-header span::before {
+  content: "\f111 >";
+  font-family: "uicons-regular-straight" !important;
+  font-size: 10px;
+  margin-right: 10px;
+  width: 10px;
+}
+
+.main-body {
+  padding: 150px 260px;
+  display: flex;
+}
+
+.main-body > .left-img-container {
+  padding: 0 10px;
+  padding-right: 30px;
+}
+
+.left-img-container > img {
+  height: 578px;
+  border-radius: 10px;
+}
+
+.main-body > .right-form-container {
+  padding: 0 12px;
+  width: 100%;
+}
+
+.main-body > .right-form-container > .headings > h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  flex: 0 0 auto;
+  font-weight: 700;
+}
+
+.main-body > .right-form-container > .headings > p {
+  font-weight: 400;
+  line-height: 24px;
+  color: #7e7e7e;
+  margin-bottom: 30px;
+}
+
+.right-form-container > .login-form > input {
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  outline: none;
+  height: 64px;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.right-form-container > .login-form > input:focus,
+.right-form-container > .login-form > .security-code > input:focus {
+  border-color: #bce3c9;
+}
+
+.right-form-container > .login-form > .security-code {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-form-container > .login-form > .security-code > input {
+  /* width: 100%; */
+  margin-bottom: 15px;
+  /* width: 100%; */
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  outline: none;
+  height: 64px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.right-form-container > .login-form > .security-code > span {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 40px;
+  font-size: 24px;
+  background: #bce3c9;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.text-new {
+  color: #3bb77e;
+}
+.text-hot {
+  color: #f74b81;
+}
+.text-sale {
+  color: #67bcee;
+}
+.text-best {
+  color: #f59758;
+}
+
+.chk-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.chk-form > label {
+  font-size: 14px;
+  color: #687188;
+}
+
+.chk-form > label > input {
+  margin-right: 8px;
+  border: 1px solid #ececec;
+  padding-left: 20px;
+}
+
+.chk-form > a {
+  text-decoration: none;
+  color: #b6b6b6;
+  font-size: 14px;
+}
+
+.login-form button[type="btn"] {
+  background-color: #253d4e;
+  border: #253d4e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 10px;
+}
+
+.weak hr {
+  border: 3px solid red;
+  width: 25%;
+}
+
+.medium hr {
+  border: 3px solid yellow;
+  width: 50%;
+}
+
+.strong hr {
+  border: 3px solid green;
+  width: 100%;
+}
+
+.none, .true {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+    .main-body {
+        padding: 150px 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-body {
+        padding: 150px 50px;
+    }
+}
+
+@media (max-width: 992px) {
+  .main-body {
+    display: block;
+    width: 100%;
+    padding: 150px 0;
+  }
+  .main-body .left-img-container {
+    display: none;
+  }
+
+  .main-body > .right-form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 448px) {
+  .right-form-container > .login-form > .security-code > input {
+    width: 100%;
+    height: 48px;
+    margin-right: 14px;
+  }
+
+  .right-form-container > .login-form > input {
+    height: 56px;
+  }
+
+  .right-form-container > .login-form > .security-code > span {
+    height: 48px;
+    padding: 0 30px;
+    font-size: 16px;
+    background: #bce3c9;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+}

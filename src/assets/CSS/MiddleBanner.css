@@ -1,0 +1,82 @@
+.newsletter .newsletter-inner {
+  background: url(../img/banners/midBanner1.png) no-repeat center;
+
+  background-size: cover;
+
+  padding: 8px;
+
+  clear: both;
+
+  display: table;
+
+  width: 100%;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  min-height: 230px;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+
+  color: #253d4e;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.newsletter-content {
+  padding-top: 8rem;
+    padding-left: 5%;
+}
+
+.newsletter-content form input {
+  border: 0;
+  padding-left: 12px !important;
+}
+
+.newsletter-content form button {
+  border: 0;
+  font-weight: 700;
+}
+
+button[type="submit"] {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 20px;
+  color: #ffffff;
+  border: none;
+  background-color: #3bb77e;
+  border: 1px solid #29a56c;
+  border-radius: 50px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.col-lg-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .newsletter img{
+    width: 70%;
+  }
+  .newsletter-content {
+    padding-top: 4rem;
+  }
+  button[type="submit"] {
+    font-size: 12px;
+    padding: 10px 10px;
+  } 
+  .form-subcriber input {
+    height: auto;
+    padding: 8px 0px;
+    width: auto;
+  }
+}

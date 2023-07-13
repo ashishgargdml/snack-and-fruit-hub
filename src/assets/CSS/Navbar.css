@@ -5,7 +5,7 @@
 }
 
 .items ul li {
-  margin: 0px 5px;
+  margin: 0px 20px;
 }
 .main {
   border-radius: 12px;
@@ -63,7 +63,7 @@
   background: #3bb77e;
   border: #3bb77e;
   border-radius: 5px;
-  padding: 0px 8px;
+  padding: 0px 10px;
   font-size: 18px;
   color: white;
   cursor: pointer;
@@ -96,10 +96,6 @@
   padding: 20px 10px;
 }
 
-.last-header .custom-list a:hover {
-  color: #3bb77e ;
-}
-
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -107,7 +103,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.top-header > ul > li {
+.top-header > ul > li  {
   margin-right: 20px;
   position: relative;
   display: flex;
@@ -120,15 +116,15 @@
 }
 
 .top-header > ul > li:before {
-  content: "";
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 1px;
-  height: 10px;
-  background: #dedfe2;
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background: #dedfe2;
 }
 
 .top-header a {
@@ -151,6 +147,7 @@
   margin-bottom: 20px;
   background: #fff;
 }
+
 
 .sub-header .logo {
   width: 230px;
@@ -196,7 +193,7 @@ option:hover {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: white !important;
+  background-color: white!important;
 }
 
 .sub-header .custom-input {
@@ -247,7 +244,7 @@ option:hover {
   display: flex;
   padding: 10px 10px;
   flex-wrap: wrap;
-  color: #253d4e;
+  color: #253D4E;
 }
 
 .my-account-dropdown a img {
@@ -289,7 +286,7 @@ option:hover {
 }
 
 .last-header .dropdown-menu .dropdown-item img {
-  max-width: 30px !important;
+  max-width: 30px!important;
 }
 
 .hotline h2 {
@@ -305,11 +302,11 @@ option:hover {
   margin-right: 10px;
 }
 
-.hotline p {
+.hotline p{
   font-weight: 500;
   font-size: 12px;
   font-family: "Lato", sans-serif;
-  color: #7e7e7e;
+  color: #7E7E7E;
   display: block;
   letter-spacing: 0.9px;
   margin-top: -10px;
@@ -320,6 +317,7 @@ option:hover {
   flex-direction: column;
   height: 30px;
 }
+
 
 ::-webkit-scrollbar {
   width: 1px;
@@ -343,24 +341,7 @@ option:hover {
   .flex {
     flex-wrap: wrap;
   }
-  .browser-btn {
-    padding: 0px 6px;
-    font-size: 15px;
-    line-height: 0.9;
-  }
 }
-
-@media (max-width: 1168px) {
-  .hotline h2 {
-    font-size: 18px;
-  }
-  .hotline img {
-    width: 26px;
-  }
-  .hotline p {
-    font-size: 10px;
-  }
-} 
 
 @media screen and (max-width: 996px) {
   .top-header {

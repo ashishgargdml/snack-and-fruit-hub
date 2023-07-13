@@ -1,0 +1,28 @@
+.section-padding {
+  padding: 25px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(268px , 1fr))
+}
+.banner-left-icon {
+  background: #e5e9f0;
+  padding: 20px 16px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.banner-left-icon .banner-icon {
+  max-width: 60px;
+  margin-right: 20px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.banner-left-icon .banner-text h3 {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.banner-left-icon .banner-icon:hover{
+    transform: translate(0,-6px);
+}

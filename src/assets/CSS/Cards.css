@@ -1,0 +1,73 @@
+.mapped-content h6 {
+  font-weight: 700;
+}
+
+.mapped-content {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 10px;
+  text-align: center;
+  background: #ddf1e7;
+}
+
+.mapped-content img {
+  margin: 0 auto;
+}
+
+.mapped-content:hover {
+  border: 1px solid #acd6c2;
+  border-radius: 8px;
+}
+
+.mapped-content h6:hover {
+  color: #3bb77e;
+}
+
+.custom-btn-ctrl button {
+  border-radius: 20px;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.custom-btn-ctrl button:hover {
+  background-color: #3bb77e;
+}
+
+
+.title .nav-link {
+    background: none;
+    font-size: 16px;
+    color: #253D4E;
+    font-weight: 700;
+    margin-right:1.2em;
+    margin-top: 0.8em;
+}
+
+.title .nav-link:hover {
+  color:#3bb77e;
+}
+
+.slick-initialized .slick-slide {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.slick-list {
+  height: 250px;
+}
+
+@media (max-width:768px) {
+  .d-flex {
+    display: block !important;
+  }
+  .mapped-content {
+    width: 70% !important;
+  }
+  .slick-initialized .slick-slide {
+    margin-left: -30px;
+    margin-right: -40px;
+    margin-top: 10px;
+  }
+}
