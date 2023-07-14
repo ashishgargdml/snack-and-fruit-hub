@@ -144,11 +144,9 @@ const Navbar = () => {
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary sub-header">
         <div className="container-fluid" style={{ background: "#fff" }}>
-          <a className="navbar-brand logo" href="">
-            <Link to={"/"}>
+          <Link className="navbar-brand logo" to="/">
               <img src={logo} alt="logo" width={"180px"} />
             </Link>
-          </a>
           <button
             className="navbar-toggler"
             type="button"

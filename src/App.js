@@ -11,11 +11,19 @@ import FeatureFooter from "./components/Home/Footer/FeatureFooter";
 import Footer from "./components/Home/Footer/Footer";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import axios from "axios";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
+  const [users, setUsers] = useState([]);
+
+  const loadData = async () => {
+    const res = (await axios.get("http://localhost:3003/users")).data;
+    setUsers(res);
+  };
 
   useEffect(() => {
+    loadData();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -40,10 +48,10 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="/login" element={<Login users={users}/>} />
                 <Route path="/product-info" element={<Product />} />
                 <Route path="/shopping-cart" element={<Cart />} />
-                <Route path="/my-account" element={<Account />} />
+                <Route path="/my-account" element={<Account users={users}/>} />
               </Routes>
               <MiddleBanner />
             </main>

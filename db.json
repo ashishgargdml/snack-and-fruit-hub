@@ -164,5 +164,18 @@
         }
       ]
     }
-  ]
+  ],
+    "users": [
+      {
+        "fname": "John",
+        "lname": "Doe",
+        "email": "john.doe@nest.com",
+        "password": "JohnDoe@123",
+        "phone": "123-456-7890",
+        "billingAddress": "3522 Interstate, 75 Business Spur, Sault Ste., Marie, MI 49783",
+        "billingCity": "New York",
+        "shippingAddress": "4299 Express Lane, Sarasota, FL 34249 USA Phone: 1.941.227.4444",
+        "shippingCity": "Sarasota"
+      }
+    ]
 }

@@ -240,6 +240,7 @@ option:hover {
   z-index: 1030;
   padding: 10px 10px;
   width: 200px;
+  transform: translate(-94px, 20px);
 }
 
 .my-account-dropdown .dropdown-menu a {
@@ -248,6 +249,11 @@ option:hover {
   padding: 10px 10px;
   flex-wrap: wrap;
   color: #253d4e;
+}
+
+.my-account-dropdown .dropdown-menu a:focus {
+  background-color: #3bb77e;
+  color: #fff;
 }
 
 .my-account-dropdown a img {

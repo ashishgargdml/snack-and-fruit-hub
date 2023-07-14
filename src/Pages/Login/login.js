@@ -2,23 +2,35 @@ import React, { useState } from "react";
 import { house } from "../../components/Home/images";
 import { validEmail, validateEmail, passwordCheck } from "./validator";
 import "./login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Login = () => {
+const Login = ({ users }) => {
   const secCode = new RegExp(/8675/);
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [code, setCode] = useState("");
+  const navigate = useNavigate();
+  const passError = () => toast.error("Invalid password!!");
+  const userError = () => toast.error("Invalid username!!");
 
   const onPasswordChange = (e) => setPass(e.target.value);
   const onNameChange = (e) => setEmail(e.target.value);
 
   const OnButtonClick = () => {
-    passwordCheck(pass) === "strong" &&
-      validEmail.test(email) &&
-      code === "8675"
-      ? console.log(`email : ${email}, password : ${pass}`)
-      : console.log("failed");
+    email === users[0].email ? (
+      pass === users[0].password ? (
+        <>
+          {console.log("sucess")}
+          {navigate("/")}
+        </>
+      ) : (
+        passError()
+      )
+    ) : (
+      userError()
+    );
   };
   return (
     <>
@@ -45,7 +57,9 @@ const Login = () => {
             <h1>Login</h1>
             <p>
               Don't have an account?{" "}
-              <Link style={{ color: "#3bb77e" }} to={'/register'}>Create Here</Link>
+              <Link style={{ color: "#3bb77e" }} to={"/register"}>
+                Create Here
+              </Link>
             </p>
           </div>
           <div className="login-form">
@@ -87,7 +101,19 @@ const Login = () => {
                 <b className="text-best">5</b>
               </span>
             </div>
-              {!secCode.test(code) ? <div style={{color:'#7e7e7e', fontSize:'14px', marginBottom:'5px'}}>please meatch the security code</div>: ''}
+            {!secCode.test(code) ? (
+              <div
+                style={{
+                  color: "#7e7e7e",
+                  fontSize: "14px",
+                  marginBottom: "5px",
+                }}
+              >
+                please meatch the security code
+              </div>
+            ) : (
+              ""
+            )}
             <div className="chk-form">
               <label>
                 <input type="checkbox" name="checkbox" />
@@ -103,6 +129,7 @@ const Login = () => {
             >
               Login
             </button>
+            <ToastContainer />
           </div>
         </div>
       </main>
